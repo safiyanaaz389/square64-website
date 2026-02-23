@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #d8d6e2;
+        background-image: url(images/background-lines.png), url(images/Ellipse\ 2\ \(1\).png);
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: left, right;
+
+
+    }
+/* header-part */
+    .header {
+        display: flex;
+    }
+
+    .navlogo {
+        display: flex;
+        justify-content: space-around;
+        background: transparent;
+      
+
+    }
+
+    .navlogo ul {
+        display: flex;
+        list-style-type: none;
+        margin-top: 22px;
+        margin-right: 10px;
+    }
+
+    .navcenter li {
+        margin: 20px;
+    }
+
+    .navcenter ul {
+        margin-right: 200px;
+    }
+
+    .navlogo img {
+        width: 45%;
+    }
+
+    .login-btn {
+        width: 110px;
+        border-radius: 5px;
+        border: none;
+        color: aliceblue;
+        background: linear-gradient(rgb(26, 26, 117), rgb(251, 0, 255));
+        margin-bottom: 10px;
+        margin-top: 19px;
+        height: 45px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .login-btn a {color: #fbf9f9; }
+    
+
+    .navcenter select {
+        border: none;
+        background-color: transparent;
+    }
+
+    .red a {
+        color: red;
+    }
+
+    /* 1nd-section */
+    .banner-1 ul li h1 {
+        font-size: 48px;
+        font-style: normal;
+        margin-left: 58px;
+        margin-top: 60px;
+        margin-bottom: 47px;
+        font-weight: 746;
+        color: #363638;
+
+    }
+
+    .banner-1 ul li h2 {
+        font-size: 20px;
+        font-style: normal;
+        margin-left: 58px;
+        margin-bottom: 47px;
+        font-family: inherit;
+        color: #66666d;
+
+    }
+
+    .learnmore-btn {
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        background: linear-gradient(rgb(26, 26, 117), rgb(251, 0, 255));
+        height: 44px;
+        width: 110px;
+        margin-left: 58px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .learnmore-btn a {color: #fbf9f9; }
+    
+
+
+    .banner1st-img img {
+        width: 80%;
+    }
+
+    .banner-1 {
+        display: flex;
+        gap: 316px;
+    }
+
+    /* 2rd-section */
+    .banner-2 {
+        display: flex;
+        gap: 169px;
+        background-color: #ffffff;
+        margin-left: 141px;
+        margin-right: 241px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    .banner2-img img {
+        width: 40%;
+        margin-top: -26px;
+    }
+
+    .banner2-img {
+        list-style-type: none;
+    }
+
+    .banner-2 ul li {
+        list-style-type: none;
+    }
+
+    .banner-2 ul li h1 {
+        font-size: 34px;
+        margin-bottom: 20px;
+        font-weight: 306;
+        color: #404043;
+
+    }
+
+    .banner-2 ul li h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-style: normal;
+        color: #66666d;
+
+    }
+
+    .learnmore2-btn {
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 14px;
+        background: linear-gradient(rgb(26, 26, 117), rgb(251, 0, 255));
+        height: 39px;
+        width: 110px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .learnmore2-btn a {color: #fbf9f9; }
+    
+
+    /* 3rd-section */
+
+    .banner-3 {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+        margin-left: 98px;
+    }
+
+    .aboutus {
+        background-color: #fbf9f9;
+        margin-left: 267px;
+        margin-bottom: 20px;
+        margin-top: 84px;
+        font-size: 10px;
+        width: 23%;
+        padding-bottom: 42px;
+        position: absolute;
+        z-index: 2;
+        padding-right: 23px;
+        padding-left: 23px;
+    }
+
+    .banner3-img img {
+        width: 50%;
+        margin-left: 468px;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .banner-3 ul {
+        list-style-type: none;
+    }
+
+    .knowmore-btn {
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        background: linear-gradient(rgb(26, 26, 117), rgb(251, 0, 255));
+        height: 39px;
+        width: 110px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+      .knowmore-btn a {color: #fbf9f9; }
+    
+
+    .aboutus h1 {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-right: 30px;
+    }
+
+    .aboutus h2 {
+        font-size: 13px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-weight: 460;
+        color: #66666d;
+    }
+
+    .aboutus h3 {
+        font-size: 13px;
+        margin-left: 20px;
+        font-weight: 476;
+        color: #66666d;
+
+
+    }
+
+    .banner3-img {
+        margin-bottom: 20px;
+    }
+
+    /* 4rth-section */
+    .center {
+        text-align: center;
+        color: #39393F;
+        font-size: 12px;
+    }
+
+    .ourteam {
+        display: flex;
+        background-color: #f8f4f4;
+        margin-left: 10px;
+        width: 21%;
+        margin-top: 20px;
+    }
+
+    .text {
+        margin-left: 20px;
+        margin-top: 20px;
+        list-style-type: none;
+    }
+
+    .text h1 {
+        color: rgb(243, 15, 247);
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .text h2 {
+        font-size: 16px;
+        margin-top: 5px;
+
+    }
+
+    .text h3 {
+        font-size: 12px;
+        color: #8f8d8f;
+        margin-top: 5px;
+
+
+    }
+
+    .ourteam img {
+        width: 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .teams {
+        display: flex;
+        justify-content: center;
+        margin-left: 160px;
+
+    }
+
+
+    .square img {
+        width: 86%;
+        margin-left: 140px;
+    }
+
+    .center2 {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /* footer-part */
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .bio {
+        margin-left: 10px;
+        margin-left: 101px;
+    }
+
+    .bio img {
+        width: 48%;
+        margin-top: 98px;
+    }
+
+    .bio h1 {
+        font-size: 15px;
+        list-style-type: none;
+        margin-top: 27px;
+        color: #39393E;
+    }
+
+    .bio h1 i {
+        border-radius: 70px;
+        border: none;
+        color: #d8d6e2;
+        margin-right: 10px;
+        background: linear-gradient(rgb(28, 28, 77), rgb(186, 100, 188));
+        padding: 6px 6px
+    }
+
+    .bio h2 i {
+        border-radius: 16px;
+        border: none;
+        color: #d8d6e2;
+        margin-right: 10px;
+        background: linear-gradient(rgb(28, 28, 77), rgb(186, 100, 188));
+        padding: 7px 7px;
+    }
+
+    .bio h3 i {
+        border-radius: 16px;
+        border: none;
+        color: #d8d6e2;
+        margin-right: 10px;
+        background: linear-gradient(rgb(28, 28, 77), rgb(186, 100, 188));
+        padding: 6px 8px
+    }
+
+    .bio li {
+        list-style-type: none;
+    }
+
+    .bio h2 {
+        font-size: 15px;
+        margin-top: 27px;
+        color: #39393E;
+    }
+
+    .bio h3 {
+        font-size: 15px;
+        margin-top: 27px;
+        color: #39393E;
+    }
+
+    .bio h4 {
+        margin-left: 35px;
+        color: #39393E;
+    }
+    .get {
+        background-color: #f4f1f1;
+        padding-bottom: 20px;
+        padding-left: 26px;
+        padding-right: 9px;
+        margin-right: 107px;
+        margin-top: 94px
+    }
+    .get h1 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #55555b;
+    }
+    .get h2 {
+        font-size: 13px;
+        color: #39393E;
+    }
+
+    .get input {
+        font-size: 12px;
+        width: 97%;
+        height: 30px;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(220, 220, 231);
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .get ul {
+        list-style-type: none;
+        margin-top: 17px;
+    }
+
+    .sendmsg-btn {
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        background: linear-gradient(rgb(26, 26, 117), rgb(251, 0, 255));
+        height: 37px;
+        width: 100px;
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .sendmsg-btn a {color: #fbf9f9; }
+    
+    .entertext {
+        margin-bottom: 7px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="navlogo">
+            <ul>
+                <li> <img src="images/Group 1.png"> </li>
+            </ul>
+
+            <div class="navcenter">
+                <ul>
+                    <li class="red"> <a href="#">Home </a> </li>
+                    <li><a href="#">About Us </a></li>
+                    <li><a href="#">Investment philosphy </a></li>
+
+                    <li> <a href="#"> Discloser </a></li>
+
+                    <li> <i class="fas fa-caret-down"> </i> </li>
+
+                    <li> <a href="#">contact Us</a></li>
+                </ul>
+            </div>
+
+            <button class="login-btn"> <a href="#"> Login </a> </button>
+
+        </div>
+    </header>
+
+    <div class="banner-1">
+        <ul>
+            <li>
+                <h1> Empowering your<br> investments, Elevating <br> your wealth</h1>
+                <h2> Discover deep-value investment opportunities that others overlook,<br>with a focus on maximizing
+                    long-term returns.</h2>
+                <button class="learnmore-btn"> <a href="#"> learn More </a> </button>
+            </li>
+        </ul>
+        <div class="banner1st-img"> <img src="images/Frame.png"> </div>
+
+    </div>
+    <div class="banner-2">
+
+        <ul class="banner2-img">
+            <li> <img src="images/Group (3).png"> </li>
+        </ul>
+        <ul>
+            <li>
+                <h1>Investment Philosophy</h1>
+                <h2>Our investment objective is to compound the capital at a high rate of return without<br> taking
+                    excessive risk. We will achieve this by identifying opportunities that are <br>steady
+                    compounders which are currently out of favour of the market thus providing ‘value’.</h2>
+            </li>
+            <button class="learnmore2-btn">  <a href="#">  Learn More </a> </button>
+        </ul>
+    </div>
+
+    <div class="banner-3">
+
+        <div class="aboutus">
+            <ul>
+                <li>
+                    <h1>About us </h1>
+                    <h2>Square 64 Capital Advisors LLP  offers Portfolio Management Services, based out of  Mumbai.
+                        Square 64 has been
+                        ideated on the concept of ‘Value Investing’. It follows the simple strategy of investing in the
+                        right publicly listed companies, and then holding tight till the markets play out and the stock
+                        achieves the desired results.</h2>
+                    <h3>The firm has three partners at its helm – Priyankar Sarkar, Ankit Poddar and Vishwanshu Agarwal.
+                        Each of the partners
+                        has more than a decade of experience in portfolio management, business development and
+                        operations management.</h3>
+                    <button class="knowmore-btn"><a href="#"> Know More </a> </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="banner3-img">
+            <ul>
+                <li> <img src="images/broker.png"> </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <ul class="center">
+        <li>
+            <h1>Our Team </h1>
+        </li>
+    </ul>
+
+    <div class="teams">
+        <div class="ourteam">
+            <img src="images/portaraithandsome.png">
+            <ul class="text">
+                <li>
+                    <h1> Partner</h1>
+                    <h2>Priyankar Sarkar</h2>
+                    <h3>Portfolio management</h3>
+                </li>
+            </ul>
+
+        </div>
+        <div class="ourteam">
+            <img src="images/close-up-young-indian-businessman-wearing-white-shirt 1.png">
+            <ul class="text">
+                <li>
+                    <h1> Partner</h1>
+                    <h2>Priyankar Sarkar</h2>
+                    <h3>Portfolio management</h3>
+                </li>
+            </ul>
+
+        </div>
+        <div class="ourteam">
+            <img src="images/portrait-yung.png">
+            <ul class="text">
+                <li>
+                    <h1> Partner</h1>
+                    <h2>Priyankar Sarkar</h2>
+                    <h3>Portfolio management</h3>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="center2">
+        <h1> &#8592</h1>
+        <h1>01</h1>
+        <h2>&#8594</h2>
+
+    </div>
+    <div class="square">
+        <img src="images/Frame 19.png">
+    </div>
+    <div class="footer">
+
+        <div class="bio">
+            <img src="images/Group 1.png">
+            <ul>
+                <li>
+                    <h1>  <i class="fas fa-phone"> </i> +91 (0)22 4067 9102</h1>
+                    <h2>  <i class="fas fa-envelope"></i>  admin@square64.com </h2>
+                    <h3> <i class="fas fa-map-marker-alt"></i> 207/208, Camla Industrial Estate, Sun Mill</h3>
+                    <h4> Compound, Lower Parel, Delisle Road, Mumbai<br> 400013 Maharashtra, India</h4>
+                </li>
+                </h4>
+                </li>
+            </ul>
+        </div>
+        <div class="get">
+            <h1>Get In Touch</h1>
+            <h2>Your email address will not be published. Required fields are marked *</h2>
+            <ul>
+                <li class="entertext"> <input type="You Name" placeholder="You Name"> </li>
+                <li class="entertext"> <input type="Your Email*" placeholder="Your Email*"> </li>
+                <li class="entertext"> <input type="Message" placeholder="Message"> </li>
+            </ul>
+            <button class="sendmsg-btn"><a href="#"> Send Message </a> </button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
